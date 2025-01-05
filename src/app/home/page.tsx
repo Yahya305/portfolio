@@ -1,0 +1,94 @@
+import Navbar from "@components/Navbar";
+import React from "react";
+
+function HomePage() {
+    return (
+        <>
+        <Navbar />
+        <h2>dsadsaadasd</h2>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        <div>sdas</div>
+        </>
+    );
+}
+
+export default HomePage;

@@ -2,26 +2,115 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Cormorant Garamond", serif;
+    }
+    h2 {
+        font-size: 70px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 224 71.4% 4.1%;
+        --card: 0 0% 100%;
+        --card-foreground: 224 71.4% 4.1%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 224 71.4% 4.1%;
+        --primary: 262.1 83.3% 57.8%;
+        --primary-foreground: 210 20% 98%;
+        --secondary: 220 14.3% 95.9%;
+        --secondary-foreground: 220.9 39.3% 11%;
+        --muted: 220 14.3% 95.9%;
+        --muted-foreground: 220 8.9% 46.1%;
+        --accent: 220 14.3% 95.9%;
+        --accent-foreground: 220.9 39.3% 11%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 20% 98%;
+        --border: 220 13% 91%;
+        --input: 220 13% 91%;
+        --ring: 262.1 83.3% 57.8%;
+        --radius: 0.5rem;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+
+        --scrollbar-bg: #e1e1e1; /* Light scrollbar background */
+        --scrollbar-thumb: #888; /* Light scrollbar thumb */
+        --scrollbar-thumb-hover: #555; /* Hover color for thumb */
+    }
+
+    .dark {
+        --background: 229 13% 23%; /* Updated to #2a2c39 */
+        --foreground: 0 0% 100%; /* Updated to white text */
+        --card: 229 14% 19%; /* Same as primary for a consistent look */
+        --card-foreground: 0 0% 100%; /* White text for contrast */
+        --popover: 229 13% 23%; /* Matches background for coherence */
+        --popover-foreground: 0 0% 100%;
+        --primary: 229 14% 19%; /* Updated to #252734 */
+        --primary-foreground: 0 0% 100%; /* White text */
+        --secondary: 220 10% 30%; /* Slightly darker shade for secondary */
+        --secondary-foreground: 0 0% 100%; /* Consistent with text */
+        --muted: 220 10% 30%; /* Muted matches secondary */
+        --muted-foreground: 0 0% 80%; /* Softer white for muted text */
+        --accent: 229 14% 19%; /* Accent matches primary */
+        --accent-foreground: 0 0% 100%; /* White text */
+        --destructive: 0 62.8% 30.6%; /* Kept for emphasis */
+        --destructive-foreground: 0 0% 100%;
+        --border: 220 10% 30%; /* Subtle border color */
+        --input: 220 10% 30%; /* Inputs match muted */
+        --ring: 229 14% 19%; /* Ring matches primary */
+        --chart-1: 229 60% 50%; /* Balanced blue tone */
+        --chart-2: 229 50% 45%; /* Slightly darker blue */
+        --chart-3: 30 80% 55%; /* Kept original vibrant yellow */
+        --chart-4: 280 65% 60%; /* Vibrant purple for variety */
+        --chart-5: 340 75% 55%; /* Vibrant pink for variety */
+
+        --scrollbar-bg: #2a2c39; /* Dark scrollbar background */
+        --scrollbar-thumb: #555; /* Dark scrollbar thumb */
+        --scrollbar-thumb-hover: #777; /* Hover color for dark thumb */
+    }
+}
+
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Scrollbar width */
+    height: 12px; /* Scrollbar height (for horizontal scrollbars) */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg); /* Track color */
+    border-radius: 6px; /* Optional rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb); /* Thumb color */
+    border-radius: 6px; /* Optional rounded corners */
+    border: 3px solid transparent; /* Adds padding around thumb */
+    background-clip: padding-box; /* Prevent thumb color from overflowing */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover); /* Hover state for thumb */
 }
