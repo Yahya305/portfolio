@@ -1,11 +1,15 @@
 import Navbar from "@components/Navbar";
+import ConcentricCircles from "@components/ui/ConcentricCircles";
 import React from "react";
+import Intro from "./components/Intro";
 
 function HomePage() {
     return (
         <>
         <Navbar />
-        <h2>dsadsaadasd</h2>
+        <ConcentricCircles />
+        <Intro />
+        
         <div>sdas</div>
         <div>sdas</div>
         <div>sdas</div>

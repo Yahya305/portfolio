@@ -12,7 +12,7 @@ function Wrapper({
 }>) {
     // const {isDesktop} =useMediaQuery();
   return (
-    <div className={cn("xs:px-3 sm:px-[40px] lg:px-[100px] xl:px-[140px] 2xl:px-[180px]",className)}>
+    <div className={cn("xs:px-3 sm:px-[40px] lg:px-[100px] xl:px-[100px] 2xl:px-[180px] 3xl:px-[20vw]",className)}>
       {children}
     </div>
   )

@@ -11,6 +11,7 @@ const config: Config = {
         extend: {
             screens: {
                 xs: "450px", // Custom media query for extra small screens
+                "3xl": "2000px", // Custom media query for extra large screens
             },
             colors: {
                 background: "hsl(var(--background))",

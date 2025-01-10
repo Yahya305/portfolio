@@ -36,16 +36,16 @@ function Navbar() {
     
     return (
         <NavSticker>
-            <Wrapper className="bg-primary">
-                <NavigationMenu className="w-full py-6 bg-primary text-primary-foreground">
-                    <NavigationMenuList className="flex gap-10">
+            <Wrapper className="bg-transparent">
+                <NavigationMenu className="w-full py-6 ">
+                    <NavigationMenuList className="flex gap-10 text-secondary-foreground">
                         {routes.map(({ title, href }, key) => (
                             <NavigationMenuItem key={key}>
-                                <Link href={href}>{title}</Link>
+                                <Link href={href} className="hover:text-primary-foreground">{title}</Link>
                             </NavigationMenuItem>
                         ))}
                     </NavigationMenuList>
-                    <NavigationMenuList className="flex justify-end gap-6 ">
+                    <NavigationMenuList className="flex justify-end gap-6 text-primary-foreground">
                         <NavigationMenuItem>
                             <Link href="/hire-me">Hire Me</Link>
                         </NavigationMenuItem>

@@ -71,7 +71,7 @@
         --primary: 229 14% 19%; /* Updated to #252734 */
         --primary-foreground: 0 0% 100%; /* White text */
         --secondary: 220 10% 30%; /* Slightly darker shade for secondary */
-        --secondary-foreground: 0 0% 100%; /* Consistent with text */
+        --secondary-foreground: 220 7% 57%; /* Updated to #858792 */
         --muted: 220 10% 30%; /* Muted matches secondary */
         --muted-foreground: 0 0% 80%; /* Softer white for muted text */
         --accent: 229 14% 19%; /* Accent matches primary */

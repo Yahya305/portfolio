@@ -39,7 +39,7 @@ function NavSticker({
         <div
             className={`top-0 left-0 w-full z-50 transition-transform duration-300 ${
                 isSticky
-                    ? "fixed translate-y-0"
+                    ? "fixed translate-y-0 bg-primary"
                     : isVisible
                     ? "relative"
                     : "-translate-y-full"
