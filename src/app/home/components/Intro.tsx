@@ -8,6 +8,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { cn } from "@lib/utils";
+import GetResumeButton from "@components/GetResumeButton";
 
 function Section1({ className }: { className?: string }) {
     return (
@@ -19,9 +20,7 @@ function Section1({ className }: { className?: string }) {
             <div className="text-lg text-secondary-foreground lg:w-[270px] xl:w-[439px]">
                 UI/UX Designer specializing in Shopify & Webflow.
             </div>
-            <button className="flex items-center gap-2 relative p-8 border rounded-[50px] bg-background hover:bg-border my-10 z-10">
-                Get Resume <FiDownload size={20} />
-            </button>
+            <GetResumeButton />
         </div>
     );
 }

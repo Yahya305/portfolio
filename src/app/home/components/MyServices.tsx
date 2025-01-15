@@ -11,7 +11,7 @@ import {
 
 export default function MyServices() {
     return (
-        <Wrapper className="mt-20">
+        <Wrapper className="bg-secondary py-20">
             <span className="text-secondary-foreground text-lg">
                 || &nbsp;&nbsp;&nbsp; My Services
             </span>

@@ -58,7 +58,7 @@
     }
 
     .dark {
-        --background: 229 13% 23%; /* Updated to #2a2c39 */
+        --background: 229 14% 19%; /* Updated to #2a2c39 */
         --foreground: 0 0% 100%; /* Updated to white text */
         --card: 229 14% 19%; /* Same as primary for a consistent look */
         --card-foreground: 0 0% 100%; /* White text for contrast */
@@ -66,7 +66,7 @@
         --popover-foreground: 0 0% 100%;
         --primary: 229 14% 19%; /* Updated to #252734 */
         --primary-foreground: 0 0% 100%; /* White text */
-        --secondary: 220 10% 30%; /* Slightly darker shade for secondary */
+        --secondary: 229 13% 23%; /* Slightly darker shade for secondary */
         --secondary-foreground: 220 7% 57%; /* Updated to #858792 */
         --muted: 220 10% 30%; /* Muted matches secondary */
         --muted-foreground: 0 0% 80%; /* Softer white for muted text */
