@@ -9,13 +9,16 @@ import { FaGithub } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { cn } from "@lib/utils";
 import GetResumeButton from "@components/GetResumeButton";
+import NameTypewriter from "./NameTypewriter";
 
 function Section1({ className }: { className?: string }) {
     return (
         <div className={cn("", className)}>
             <h2 className="lg:text-[50px] xl:text-[70px]">
                 Hello! I'm{" "}
-                <div className="lg:text-[70] xl:text-[90px]">Yahya Salman</div>
+                <div className="lg:text-[70px] w-[420px] xl:w-[540px] xl:text-[90px]">
+                    <NameTypewriter />
+                </div>
             </h2>
             <div className="text-lg text-secondary-foreground lg:w-[270px] xl:w-[439px]">
                 UI/UX Designer specializing in Shopify & Webflow.

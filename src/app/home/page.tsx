@@ -4,6 +4,7 @@ import React from "react";
 import Intro from "./components/Intro";
 import MyServices from "./components/MyServices";
 import MySkills from "./components/MySkills";
+import Figures from "./components/Figures";
 
 function HomePage() {
     return (
@@ -13,6 +14,7 @@ function HomePage() {
             <Intro />
             <MyServices />
             <MySkills />
+            <Figures />
             <div>sdas</div>
             <div>sdas</div>
             <div>sdas</div>
