@@ -31,7 +31,7 @@ function Stats({
 
 export default function Figures() {
     return (
-        <Wrapper className="py-32 bg-secondary">
+        <Wrapper className="py-32 bg-secondary/30">
             <div className="flex flex-col gap-28 justify-between items-center md:gap-0 md:flex-row">
                 <Stats
                     number={250}
@@ -46,9 +46,9 @@ export default function Figures() {
                     logo={<PiGear size={25} />}
                 />
                 <Stats
-                    number={250}
+                    number={2}
                     suffix="+"
-                    title="Happy Clients"
+                    title="Year Of Experience"
                     logo={<FaRegCalendarDays size={25} />}
                 />
             </div>

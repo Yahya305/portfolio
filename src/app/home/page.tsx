@@ -5,6 +5,7 @@ import Intro from "./components/Intro";
 import MyServices from "./components/MyServices";
 import MySkills from "./components/MySkills";
 import Figures from "./components/Figures";
+import Portfolio from "./components/Portfolio";
 
 function HomePage() {
     return (
@@ -15,87 +16,7 @@ function HomePage() {
             <MyServices />
             <MySkills />
             <Figures />
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
-            <div>sdas</div>
+            <Portfolio />
         </>
     );
 }
