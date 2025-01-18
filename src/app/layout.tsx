@@ -5,6 +5,7 @@ import { Providers } from "@lib/providers/providers";
 import { Toaster } from "@components/ui/toaster";
 import NextTopLoader from "nextjs-toploader";
 import { Poppins } from "next/font/google";
+import { SidebarMain } from "@components/Sidebar";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -37,6 +38,7 @@ export default function RootLayout({
             >
                 <Providers>
                     <NextTopLoader />
+                    <SidebarMain />
                     {children}
                 </Providers>
                 <Toaster />

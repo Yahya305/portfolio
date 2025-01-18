@@ -12,6 +12,8 @@ import {
 } from "./ui/navigation-menu";
 import Wrapper from "./Wrapper";
 import NavSticker from "./ui/NavSticker";
+import { SheetTrigger } from "./ui/sheet";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
     const routes = [
@@ -32,24 +34,31 @@ function Navbar() {
             href: "/contact-me",
         },
     ];
-    
-    
+
     return (
         <NavSticker>
-            <Wrapper className="bg-transparent">
+            <Wrapper className="bg-secondary md:bg-transparent">
                 <NavigationMenu className="w-full py-6 ">
-                    <NavigationMenuList className="flex gap-10 text-secondary-foreground">
+                    <NavigationMenuList className="hidden gap-10 md:flex text-secondary-foreground ">
                         {routes.map(({ title, href }, key) => (
                             <NavigationMenuItem key={key}>
-                                <Link href={href} className="hover:text-primary-foreground">{title}</Link>
+                                <Link
+                                    href={href}
+                                    className="hover:text-primary-foreground"
+                                >
+                                    {title}
+                                </Link>
                             </NavigationMenuItem>
                         ))}
                     </NavigationMenuList>
-                    <NavigationMenuList className="flex justify-end gap-6 text-primary-foreground">
+                    <NavigationMenuList className="justify-end hidden gap-6 md:flex text-primary-foreground">
                         <NavigationMenuItem>
                             <Link href="/hire-me">Hire Me</Link>
                         </NavigationMenuItem>
                     </NavigationMenuList>
+                    <SheetTrigger className="xs:block md:hidden">
+                        <GiHamburgerMenu size={35} />
+                    </SheetTrigger>
                 </NavigationMenu>
             </Wrapper>
         </NavSticker>

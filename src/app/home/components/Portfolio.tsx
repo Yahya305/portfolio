@@ -8,7 +8,6 @@ import {
     CarouselPrevious,
 } from "@components/ui/carousel";
 import CardProjects from "@components/ui/CardProjects";
-import useMediaQuery from "@lib/hooks/useMediaQuery";
 import ResponsiveCarousel from "./ResponsiveCarousel";
 
 export default function Portfolio() {

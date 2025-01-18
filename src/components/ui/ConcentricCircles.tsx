@@ -29,7 +29,7 @@ type PropType = { className?: string; variant?: "default" | "advanced" };
 function ConcentricCircles({ className, variant = "default" }: PropType) {
     if (variant === "default") {
         return (
-            <div className={cn("xs:hidden md:block absolute top-0", className)}>
+            <div className={cn("xs:hidden md:block absolute top-0 -z-10", className)}>
                 {/* Smallest Circle */}
                 <Circle className="xs:h-[300px] xs:w-[300px] sm:h-[340px] sm:w-[340px]" />
                 {/* Medium Circle */}
@@ -40,7 +40,7 @@ function ConcentricCircles({ className, variant = "default" }: PropType) {
         );
     } else if (variant === "advanced") {
         return (
-            <div className={cn("absolute top-0", className)}>
+            <div className={cn("absolute top-0 -z-10", className)}>
                 {/* Smallest Circle */}
                 <Circle className="xs:h-[300px] xs:w-[300px] sm:h-[340px] sm:w-[340px]" />
                 {/* Medium Circle */}

@@ -20,7 +20,7 @@ function Stats({
             <div className="p-5 border rounded-md hover:bg-primary">{logo}</div>
             <div className="min-w-max">
                 <div className="flex items-center gap-1 text-3xl">
-                    <AnimatedNumber number={number} />
+                    <AnimatedNumber from={0} to={number} />
                     {suffix}
                 </div>
                 <div className="text-secondary-foreground mt-4">{title}</div>

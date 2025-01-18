@@ -6,6 +6,8 @@ import MyServices from "./components/MyServices";
 import MySkills from "./components/MySkills";
 import Figures from "./components/Figures";
 import Portfolio from "./components/Portfolio";
+import Testimoials from "./components/Testimoials";
+import MyBlogs from "./components/Blogs";
 
 function HomePage() {
     return (
@@ -17,6 +19,8 @@ function HomePage() {
             <MySkills />
             <Figures />
             <Portfolio />
+            {/* <Testimoials /> */}
+            <MyBlogs />
         </>
     );
 }

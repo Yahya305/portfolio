@@ -1,21 +1,50 @@
 "use client";
-import React from "react";
-import AnimatedNumbers from "react-animated-numbers";
+import { animate } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
 
-export function AnimatedNumber({number}:{number:number}) {
-    return (
-        <div>
-            <AnimatedNumbers
-                includeComma
-                transitions={(index) => ({
-                    type: "spring",
-                    duration: index + 0.3,
-                })}
-                animateToNumber={number}
-                fontStyle={{
-                    fontSize: 40,
-                }}
-            />
-        </div>
-    );
+interface AnimatedNumberProps {
+    from: number;
+    to: number;
+}
+
+export function AnimatedNumber({ from, to }: AnimatedNumberProps) {
+    const nodeRef = useRef<HTMLParagraphElement | null>(null);
+    const [isInView, setIsInView] = useState(false);
+
+    useEffect(() => {
+        const node = nodeRef.current;
+
+        if (!node) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsInView(true);
+                    observer.disconnect(); // Stop observing once triggered
+                }
+            },
+            { threshold: 0.1 } // Adjust threshold as needed
+        );
+
+        observer.observe(node);
+
+        return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
+        const node = nodeRef.current;
+
+        if (isInView && node) {
+            const controls = animate(from, to, {
+                duration: 1,
+                onUpdate(value) {
+                    node.textContent = value.toFixed(0);
+                },
+            });
+
+            return () => controls.stop();
+        }
+    }, [from, to, isInView]);
+
+    return <p ref={nodeRef} />;
 }

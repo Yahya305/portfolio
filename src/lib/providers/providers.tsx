@@ -1,11 +1,8 @@
 "use client";
 
+import { Sheet } from "@components/ui/sheet";
 import { ReactNode } from "react";
 
 export function Providers({ children }: { children: ReactNode }) {
-  return (
-        <>
-        {children}
-        </>
-  );
+    return <Sheet>{children}</Sheet>;
 }
