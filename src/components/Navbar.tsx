@@ -56,6 +56,7 @@ function Navbar() {
                             <Link href="/hire-me">Hire Me</Link>
                         </NavigationMenuItem>
                     </NavigationMenuList>
+                    {/* Sidebar */}
                     <SheetTrigger className="xs:block md:hidden">
                         <GiHamburgerMenu size={35} />
                     </SheetTrigger>

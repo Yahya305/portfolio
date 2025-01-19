@@ -6,6 +6,7 @@ import { Toaster } from "@components/ui/toaster";
 import NextTopLoader from "nextjs-toploader";
 import { Poppins } from "next/font/google";
 import { SidebarMain } from "@components/Sidebar";
+import Footer from "@components/Footer";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -40,6 +41,7 @@ export default function RootLayout({
                     <NextTopLoader />
                     <SidebarMain />
                     {children}
+                    <Footer />
                 </Providers>
                 <Toaster />
             </body>
