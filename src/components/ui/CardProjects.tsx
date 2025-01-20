@@ -10,7 +10,7 @@ export default function CardProjects({ className }: { className?: string }) {
                 className
             )}
         >
-            <div className="bg-card h-[450px] flex justify-center items-end">
+            <div className="bg-card xs:h-[400px] sm:h-[450px] flex justify-center items-end">
                 <div className="relative w-[350px] h-[350px] overflow-hidden">
                     <Image
                         src="/demo_proj_1.webp"

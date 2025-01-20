@@ -2,7 +2,7 @@ import ConcentricCircles from "@components/ui/ConcentricCircles";
 import Wrapper from "@components/Wrapper";
 import Image from "next/image";
 import Link from "next/link";
-import React, { Fragment } from "react";
+import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
@@ -30,38 +30,39 @@ function Section2({ className }: { className?: string }) {
     return (
         <div
             className={cn(
-                "relative flex w-[350px] sm:w-[400px] lg:w-[500px] sm:mx-auto xs:ml-[20px]",
+                "relative flex w-[250px] h-[300px] sm:w-[350px] sm:h-[450px] md:w-[400px] md:h-[502px] lg:h-[628px] lg:w-[500px]  sm:mx-auto xs:mx-auto -translate-x-12",
                 className
             )}
         >
             <Image
                 src="/Yahya_Salman_Img2.png"
-                width={500}
-                height={200}
+                // width={500}
+                // height={200}
+                fill
                 alt="Yahya Img"
             />
-            <div className="absolute bottom-1 xs:-right-44 sm:-right-36 h-full w-[400px] overflow-hidden">
+            <div className="absolute bottom-1 xs:-right-60 sm:-right-44 h-full w-[400px] overflow-hidden">
                 <div className="relative w-[400px] ">
                     <Link
                         href="/"
-                        className="border border-[rgba(255,255,255,.1)] rounded-full absolute xs:top-[135px] xs:left-[160px] sm:top-[120px] sm:left-[160px] bg-background p-3 hover:bg-white hover:text-black"
+                        className="border border-[rgba(255,255,255,.1)] rounded-full absolute xs:top-[95px] xs:left-[100px] sm:top-[120px] sm:left-[160px] bg-background p-3 hover:bg-white hover:text-black"
                     >
                         <FaLinkedin size={25} />
                     </Link>
                     <Link
                         href="/"
-                        className="border border-[rgba(255,255,255,.1)] rounded-full absolute xs:top-[230px] xs:left-[250px] sm:top-[220px] sm:left-[270px] bg-background p-3 hover:bg-white hover:text-black"
+                        className="border border-[rgba(255,255,255,.1)] rounded-full absolute xs:top-[155px] xs:left-[175px] sm:top-[220px] sm:left-[270px] bg-background p-3 hover:bg-white hover:text-black"
                     >
                         <FaGithub size={25} />
                     </Link>
                     <Link
                         href="/"
-                        className="border border-[rgba(255,255,255,.1)] rounded-full absolute xs:top-[350px] xs:left-[270px] sm:top-[360px] sm:left-[290px] bg-background p-3 hover:bg-white hover:text-black"
+                        className="border border-[rgba(255,255,255,.1)] rounded-full absolute xs:top-[240px] xs:left-[210px] sm:top-[360px] sm:left-[290px] bg-background p-3 hover:bg-white hover:text-black"
                     >
                         <FaFacebookF size={25} />
                     </Link>
                     <ConcentricCircles
-                        className="left-[90px] -z-10 top-[350px]"
+                        className="-z-10 top-[300px]  left-[50px] sm:top-[350px] md:left-[90px]"
                         variant="advanced"
                     />
                 </div>

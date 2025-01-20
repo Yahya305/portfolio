@@ -28,8 +28,8 @@ export default function Portfolio() {
                             || &nbsp;&nbsp;&nbsp; Awesome Porfolio
                         </span>
                         <h2>My Complete Projects</h2>
-                        <CarouselPrevious className="absolute z-50 w-12 h-12 sm:top-10 left-full xs:-translate-x-28 sm:-translate-x-44 sm:h-20 sm:w-20 bg-secondary" />
-                        <CarouselNext className="absolute right-0 z-50 w-12 h-12 sm:top-10 sm:h-20 sm:w-20 bg-secondary" />
+                        <CarouselPrevious className="absolute w-12 h-12 top-0 sm:top-10 left-full xs:-translate-x-28 sm:-translate-x-44 sm:h-20 sm:w-20 bg-secondary" />
+                        <CarouselNext className="absolute right-0 w-12 h-12 top-0 sm:top-10 sm:h-20 sm:w-20 bg-secondary" />
                     </div>
                     <ResponsiveCarousel allProjects={allProjects} />
                 </Carousel>

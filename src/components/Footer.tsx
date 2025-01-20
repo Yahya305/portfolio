@@ -21,19 +21,19 @@ export default function Footer() {
                             href="tel:+923313420422"
                             className="flex gap-5 items-center my-8"
                         >
-                            <div className="border rounded-full p-7">
+                            <div className="border rounded-full p-4 sm:p-7">
                                 <FaWhatsapp size={25} />
                             </div>
-                            <div className="text-xl">+923313420422</div>
+                            <div className="text-lg sm:text-xl">+923313420422</div>
                         </Link>
                         <Link
                             href="mailto:saimyahya47@gmail.com"
                             className="flex gap-5 items-center my-8"
                         >
-                            <div className="border rounded-full p-7">
+                            <div className="border rounded-full p-4 sm:p-7">
                                 <MdOutlineMail size={25} />
                             </div>
-                            <div className="text-xl">saimyahya47@gmail.com</div>
+                            <div className="text-lg sm:text-xl">saimyahya47@gmail.com</div>
                         </Link>
                         <div className="flex justify-between gap-5">
                             <Link

@@ -29,7 +29,12 @@ type PropType = { className?: string; variant?: "default" | "advanced" };
 function ConcentricCircles({ className, variant = "default" }: PropType) {
     if (variant === "default") {
         return (
-            <div className={cn("xs:hidden md:block absolute top-0 -z-10", className)}>
+            <div
+                className={cn(
+                    "xs:hidden md:block absolute top-0 -z-10",
+                    className
+                )}
+            >
                 {/* Smallest Circle */}
                 <Circle className="xs:h-[300px] xs:w-[300px] sm:h-[340px] sm:w-[340px]" />
                 {/* Medium Circle */}
@@ -42,14 +47,14 @@ function ConcentricCircles({ className, variant = "default" }: PropType) {
         return (
             <div className={cn("absolute top-0 -z-10", className)}>
                 {/* Smallest Circle */}
-                <Circle className="xs:h-[300px] xs:w-[300px] sm:h-[340px] sm:w-[340px]" />
+                <Circle className="xs:h-[280px] xs:w-[280px] sm:h-[340px] sm:w-[340px]" />
                 {/* Medium Circle */}
                 <Circle
-                    className="xs:h-[420px] xs:w-[420px] sm:h-[460px] sm:w-[460px]"
+                    className="xs:h-[380px] xs:w-[380px] sm:h-[460px] sm:w-[460px]"
                     variant="advanced"
                 />
                 {/* Largest Circle */}
-                <Circle className="xs:h-[560px] xs:w-[560px] sm:h-[600px] sm:w-[600px]" />
+                <Circle className="xs:h-[490px] xs:w-[490px] sm:h-[600px] sm:w-[600px]" />
             </div>
         );
     }

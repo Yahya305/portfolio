@@ -21,8 +21,8 @@ function Navbar() {
 
     return (
         <NavSticker>
-            <Wrapper className="bg-secondary md:bg-transparent">
-                <NavigationMenu className="w-full py-6 ">
+            <Wrapper className="md:bg-transparent">
+                <NavigationMenu className="w-full py-3 md:py-6 ">
                     <NavigationMenuList className="hidden gap-10 md:flex text-secondary-foreground ">
                         {routes.map(({ title, href }, key) => (
                             <NavigationMenuItem key={key}>
@@ -42,7 +42,7 @@ function Navbar() {
                     </NavigationMenuList>
                     {/* Sidebar */}
                     <SheetTrigger className="xs:block md:hidden">
-                        <GiHamburgerMenu size={35} />
+                        <GiHamburgerMenu size={30} />
                     </SheetTrigger>
                 </NavigationMenu>
             </Wrapper>

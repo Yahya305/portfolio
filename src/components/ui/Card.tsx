@@ -12,7 +12,7 @@ function Card({ className }: { className?: string }) {
             )}
         >
             <PiCodeBold size={56} />
-            <h4 className="text-3xl font-semibold">UI/UX Design</h4>
+            <h4 className=" font-semibold">UI/UX Design</h4>
             <ul className="flex flex-col gap-4">
                 <li className="flex items-center gap-3 text-secondary-foreground">
                     <RiArrowRightDoubleLine /> Landing Pages

@@ -19,9 +19,9 @@ export function SidebarMain() {
     return (
         <>
             <SheetContent defaultCloseBtn={false}>
-                <SheetHeader className="p-3">
+                <SheetHeader>
                     <SheetClose>
-                        <SlClose size={35} />
+                        <SlClose size={30} />
                     </SheetClose>
                 </SheetHeader>
                 <div className="flex flex-col gap-8 my-10">
