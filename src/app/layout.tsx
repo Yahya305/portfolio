@@ -7,6 +7,7 @@ import NextTopLoader from "nextjs-toploader";
 import { Poppins } from "next/font/google";
 import { SidebarMain } from "@components/Sidebar";
 import Footer from "@components/Footer";
+import Navbar from "@components/Navbar";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -39,6 +40,7 @@ export default function RootLayout({
             >
                 <Providers>
                     <NextTopLoader />
+                    <Navbar />
                     <SidebarMain />
                     {children}
                     <Footer />

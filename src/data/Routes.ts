@@ -5,7 +5,7 @@ export const routes = [
     },
     {
         title: "Services",
-        href: "/services",
+        href: "/service",
     },
     {
         title: "Blogs",
