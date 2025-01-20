@@ -14,26 +14,10 @@ import Wrapper from "./Wrapper";
 import NavSticker from "./ui/NavSticker";
 import { SheetTrigger } from "./ui/sheet";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { routes } from "../data/Routes";
 
 function Navbar() {
-    const routes = [
-        {
-            title: "Home",
-            href: "/home",
-        },
-        {
-            title: "Services",
-            href: "/services",
-        },
-        {
-            title: "Blogs",
-            href: "/blogs",
-        },
-        {
-            title: "Contact",
-            href: "/contact-me",
-        },
-    ];
+
 
     return (
         <NavSticker>
