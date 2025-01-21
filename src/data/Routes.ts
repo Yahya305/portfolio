@@ -12,7 +12,7 @@ export const routes = [
         href: "/blogs",
     },
     {
-        title: "Contact",
-        href: "/contact-me",
+        title: "About",
+        href: "/about-me",
     },
 ];
