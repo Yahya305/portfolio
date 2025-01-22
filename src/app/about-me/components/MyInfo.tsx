@@ -7,7 +7,7 @@ export default function MyInfo() {
     return (
         <Wrapper className="bg-secondary py-20 flex flex-col md:flex-row gap-10">
             <div className="relative w-[270px] h-[400px] mx-auto md:mx-0 md:w-[270px] md:h-[400px]">
-                <Image fill src={"/My_Full_Pic.jpg"} alt="Yahya Salman Pic" />
+                <Image fill src={"/My_Full_Pic.jpg"} alt="Yahya Salman " />
                 <GetResumeButton className="absolute hidden md:flex top-[380px] left-10" />
             </div>
             <div className="flex flex-col gap-5 flex-1">

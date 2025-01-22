@@ -15,6 +15,7 @@ import NavSticker from "./ui/NavSticker";
 import { SheetTrigger } from "./ui/sheet";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { routes } from "../data/Routes";
+import { FaAnglesRight } from "react-icons/fa6";
 
 function Navbar() {
 
@@ -37,7 +38,7 @@ function Navbar() {
                     </NavigationMenuList>
                     <NavigationMenuList className="justify-end hidden gap-6 md:flex text-primary-foreground">
                         <NavigationMenuItem>
-                            <Link href="/hire-me">Hire Me</Link>
+                            <Link className="border p-3 px-5 rounded-full flex items-center gap-3 hover:bg-border" href="/hire-me">Hire Me <FaAnglesRight /></Link>
                         </NavigationMenuItem>
                     </NavigationMenuList>
                     {/* Sidebar */}
