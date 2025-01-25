@@ -34,15 +34,15 @@ export default function Figures() {
         <Wrapper className="py-32 bg-secondary/30">
             <div className="flex flex-col gap-28 justify-between items-center md:gap-0 md:flex-row">
                 <Stats
-                    number={250}
+                    number={15}
                     suffix="+"
                     title="Happy Clients"
                     logo={<FaRegUser size={25} />}
                 />
                 <Stats
-                    number={250}
+                    number={30}
                     suffix="+"
-                    title="Happy Clients"
+                    title="Project Complete"
                     logo={<PiGear size={25} />}
                 />
                 <Stats

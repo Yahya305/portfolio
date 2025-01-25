@@ -16,7 +16,7 @@ export default function BlogsViewer() {
                     >
                         <div className="relative h-[250px] sm:h-[350px] md:w-[200px] md:h-[200px] lg:w-[130px] lg:h-[130px] xl:w-[180px] xl:h-[180px]">
                             <Image
-                                src="https://htmldemo.net/lendex/lendex/assets/images/blog/blog-feed-img-1.jpg"
+                                src={blog.imgURL}
                                 fill
                                 alt="My Img"
                                 objectFit="cover"

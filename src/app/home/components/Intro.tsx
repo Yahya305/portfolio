@@ -20,7 +20,7 @@ function Section1({ className }: { className?: string }) {
                 </div>
             </h2>
             <div className="text-lg text-secondary-foreground lg:w-[270px] xl:w-[439px]">
-                UI/UX Designer specializing in Shopify & Webflow.
+                Full Stack Developer with expertise in the MERN Stack
             </div>
             <GetResumeButton />
         </div>
