@@ -27,13 +27,13 @@ export default function PaginationComponent({ totalPages }: ComponentProps) {
                 <PaginationItem>
                     <PaginationPrevious
                         disabled={page <= 1}
-                        href={`http://localhost:3000/blogs?page=${page - 1}`}
+                        href={`/blogs?page=${page - 1}`}
                     />
                 </PaginationItem>
                 <PaginationItem>
                     <PaginationLink
                         disabled={page <= 1}
-                        href={`http://localhost:3000/blogs?page=${page - 1}`}
+                        href={`/blogs?page=${page - 1}`}
                     >
                         {page - 1}
                     </PaginationLink>
@@ -46,7 +46,7 @@ export default function PaginationComponent({ totalPages }: ComponentProps) {
                 <PaginationItem>
                     <PaginationLink
                         disabled={page >= totalPages - 1}
-                        href={`http://localhost:3000/blogs?page=${page + 1}`}
+                        href={`/blogs?page=${page + 1}`}
                     >
                         {page + 1}
                     </PaginationLink>
@@ -57,7 +57,7 @@ export default function PaginationComponent({ totalPages }: ComponentProps) {
                 <PaginationItem>
                     <PaginationNext
                         disabled={page === totalPages}
-                        href={`http://localhost:3000/blogs?page=${page + 1}`}
+                        href={`/blogs?page=${page + 1}`}
                     />
                 </PaginationItem>
             </PaginationContent>

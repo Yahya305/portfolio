@@ -3,7 +3,15 @@ import React from "react";
 import { PiCodeBold } from "react-icons/pi";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
 
-function Card({ className }: { className?: string }) {
+function Card({
+    className,
+    title,
+    points,
+}: {
+    className?: string;
+    title: string;
+    points: string[];
+}) {
     return (
         <div
             className={cn(
@@ -12,23 +20,15 @@ function Card({ className }: { className?: string }) {
             )}
         >
             <PiCodeBold size={56} />
-            <h4 className=" font-semibold">UI/UX Design</h4>
+            <h4 className=" font-semibold">{title}</h4>
             <ul className="flex flex-col gap-4">
-                <li className="flex items-center gap-3 text-secondary-foreground">
-                    <RiArrowRightDoubleLine /> Landing Pages
-                </li>
-                <li className="flex items-center gap-3 text-secondary-foreground">
-                    <RiArrowRightDoubleLine /> User Flow
-                </li>
-                <li className="flex items-center gap-3 text-secondary-foreground">
-                    <RiArrowRightDoubleLine /> Wireframing
-                </li>
-                <li className="flex items-center gap-3 text-secondary-foreground">
-                    <RiArrowRightDoubleLine /> Prototyping
-                </li>
-                <li className="flex items-center gap-3 text-secondary-foreground">
-                    <RiArrowRightDoubleLine /> Mobile App Design
-                </li>
+                {points.map((point,key) => {
+                    return (
+                        <li key={key} className="flex items-center gap-3 text-secondary-foreground">
+                            <RiArrowRightDoubleLine /> {point}
+                        </li>
+                    );
+                })}
             </ul>
         </div>
     );
