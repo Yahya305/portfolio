@@ -14,6 +14,7 @@ import { routes } from "../data/Routes";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
+import { FaAnglesRight } from "react-icons/fa6";
 
 export function SidebarMain() {
     return (
@@ -37,7 +38,15 @@ export function SidebarMain() {
                             </Link>
                         );
                     })}
-                    <div className="flex justify-center mt-10 gap-5">
+                    <div className="flex justify-center mt-10">
+                        <Link
+                            className="border p-3 px-5 rounded-full flex items-center gap-3 hover:bg-border"
+                            href="/hire-me"
+                        >
+                            Hire Me <FaAnglesRight />
+                        </Link>
+                    </div>
+                    <div className="flex justify-center mt-3 gap-5">
                         <Link
                             href="https://www.linkedin.com/in/yahya-salman-37aa29263/"
                             className="p-5 border rounded-full"

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 import { PiReadCvLogoLight } from "react-icons/pi";
 import { GoPencil } from "react-icons/go";
+import Link from "next/link";
 
 export default function BlogsViewer() {
     return (
@@ -41,9 +42,12 @@ export default function BlogsViewer() {
                                     <GoPencil size={20} />
                                     <div>{blog.platform}</div>
                                 </div>
-                                <button className="flex items-center gap-2 relative xs:p-2 sm:p-4 border rounded-full bg-background hover:bg-border">
+                                <Link
+                                    href={blog.url}
+                                    className="flex items-center gap-2 relative xs:p-2 sm:p-4 border rounded-full bg-background hover:bg-border"
+                                >
                                     Read More <IoIosArrowForward size={15} />
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
