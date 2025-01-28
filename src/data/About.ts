@@ -1,41 +1,29 @@
 export const educationList = [
     {
-        duration: "2018 - 2022",
-        title: "High School Degree",
+        duration: "Jan 2022 - Dec 2026",
+        title: "Bachelor's Degree | BSCS",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "Pursuing a degree in Computer Science at University Of Karachi (UBIT), expected to graduate in 2026. Building expertise in software development, algorithms, and systems design through coursework and projects.",
     },
     {
-        duration: "2018 - 2022",
-        title: "Bachelor's Degree",
+        duration: "2020 - 2021",
+        title: "Intermediate Pre-Engineering",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "Completed intermediate education at DJ Sindh Govt. Science College, building a strong foundation in mathematics and physics, laying the groundwork for advanced studies in technology and software development.",
     },
     {
-        duration: "2018 - 2022",
-        title: "Master Degree",
+        duration: "2019",
+        title: "Matriculation",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "Completed matriculation at Army Public School, focusing on foundational subjects like mathematics, physics, and computer science, establishing a base for higher education in technology.",
     },
 ];
 
 export const experienceList = [
     {
-        duration: "2018 - 2022",
-        title: "UI/UX Designer",
+        duration: "2023 - Present",
+        title: "IANCON - Full Stack Developer",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    },
-    {
-        duration: "2018 - 2022",
-        title: "Full-Stack Developer",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    },
-    {
-        duration: "2018 - 2022",
-        title: "Frontend Developer",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "Contributed to developing and deploying scalable applications, implementing features like RBAC, payment gateways, and OAuth. Collaborated on system design and client interactions to deliver tailored solutions.",
     },
 ];
