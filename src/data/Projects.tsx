@@ -10,6 +10,13 @@ export const projects = [
     />,
     <CardProjects
         key={2}
+        title="Doctor Saab"
+        description="Doctor Saab is an AI-powered medical chatbot using LLMs, RAG, vector databases, and a structured knowledge base for accurate, context-aware responses. With a modern UI, it delivers real-time streaming replies, rich HTML-formatted messages, and smooth interactions."
+        url="https://github.com/Yahya305/Daaktar-Saab"
+        imageURL="/screenshot.png"
+    />,
+    <CardProjects
+        key={2}
         title="Marketplace Admin Panel"
         description="Admin panel for a finance/business platform, featuring advanced data visualizations with interactive graphs, robust management of sub-users, and intuitive controls for seamless administration."
         url="https://github.com/Yahya305/Marketplace-AdminPanel"
