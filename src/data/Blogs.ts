@@ -1,7 +1,17 @@
 export const blogs = [
     {
+        category: "Industry Trends",
+        date: "21 March 2025",
+        title: "Will AI Replace Development?",
+        platform: "Medium",
+        readTime: "3 min read",
+        hashtags: "#Artificial_Intelligence, #Software_Development",
+        url: "https://medium.com/@saimyahya47/will-ai-replace-development-7f3cc074b465",
+        imgURL: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*S5f2cI5dlsDnLYyiIq6bUg.jpeg",
+    },
+    {
         category: "Technology",
-        date: "23 February 2024",
+        date: "23 February 2025",
         title: "How to Create Pagination in Next.js with Shadcn UI",
         platform: "Medium",
         readTime: "5 min read",
@@ -11,9 +21,9 @@ export const blogs = [
     },
     {
         category: "Technology",
-        date: "20 February 2024",
+        date: "20 February 2025",
         title: "7 React Custom Hooks I Can't Live Without in My Projects",
-        platform: "Dev.to",
+        platform: "Medium",
         readTime: "8 min read",
         hashtags: "#TypeScript, #ReactJS, #Frontend",
         url: "https://medium.com/@saimyahya47/7-react-custom-hooks-i-cant-live-without-in-my-projects-23ade1676901",
