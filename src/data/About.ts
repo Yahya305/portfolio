@@ -1,6 +1,6 @@
 export const educationList = [
     {
-        duration: "Jan 2022 - Dec 2026",
+        duration: "Jan 2022 - Dec 2025",
         title: "Bachelor's Degree | BSCS",
         description:
             "Pursuing a degree in Computer Science at University Of Karachi (UBIT), expected to graduate in 2026. Building expertise in software development, algorithms, and systems design through coursework and projects.",

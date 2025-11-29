@@ -3,6 +3,13 @@ import CardProjects from "@components/ui/CardProjects";
 export const projects = [
     <CardProjects
         key={1}
+        title="Helion (AI Assistant)"
+        description="An advanced conversational AI agent featuring persistent memory, web search, weather tools, and real-time streaming responses powered by LangGraph and Gemini 2.0. "
+        url="https://github.com/Yahya305/Helion-AI-Chatbot"
+        imageURL="https://raw.githubusercontent.com/Yahya305/Helion-AI-Chatbot/refs/heads/master/client/public/ToolsIntegration.png"
+    />,
+    <CardProjects
+        key={1}
         title="AI Resume Analyzer"
         description="Ai Resume Analyzer is a tool which parses information from a resume using natural language processing and finds the keywords, cluster them onto sectors based on their keywords. And lastly show recommendations, predictions, analytics to the applicant based on keyword matching."
         url="https://github.com/Yahya305/AI-Resume-Analyzer"
