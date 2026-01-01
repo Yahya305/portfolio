@@ -10,6 +10,20 @@ export const projects = [
     />,
     <CardProjects
         key={1}
+        title="Sketcha"
+        description="An intelligent architectural diagramming agent that transforms natural language into complex technical visualizations (UML, Flowcharts). Features iterative 'context-aware' design modification, persistent library management, and a premium Next.js interface."
+        url="https://sketcha-tan.vercel.app"
+        imageURL="/Sketcha.png"
+    />,
+    <CardProjects
+        key={1}
+        title="Streaming App"
+        description="A high-performance architecture featuring resumable direct-to-storage uploads (Cloudflare R2), adaptive bitrate streaming (HLS) via FFmpeg transcoding, and non-blocking real-time progress tracking using Redis and Server-Sent Events."
+        url="https://github.com/Yahya305/StreamingApp"
+        imageURL="/StreamingApp.png"
+    />,
+    <CardProjects
+        key={1}
         title="AI Resume Analyzer"
         description="Ai Resume Analyzer is a tool which parses information from a resume using natural language processing and finds the keywords, cluster them onto sectors based on their keywords. And lastly show recommendations, predictions, analytics to the applicant based on keyword matching."
         url="https://github.com/Yahya305/AI-Resume-Analyzer"
@@ -30,18 +44,18 @@ export const projects = [
         imageURL="https://github.com/Yahya305/Marketplace-AdminPanel/raw/main/public/dashboard.png"
     />,
     <CardProjects
-    key={4}
-    title="AI Fake News Detector"
-    description="This project is relevant to the media industry, news outlets, and social media platforms that are responsible for sharing news articles. Classifying news articles as real or fake can help these organizations improve their content moderation and reduce the spread of fake news."
-    url="https://github.com/Yahya305/Fake-News-Detector-AI"
-    imageURL="https://github.com/Yahya305/Fake-News-Detector-AI/blob/main/public/demo.jpg?raw=true"
+        key={4}
+        title="AI Fake News Detector"
+        description="This project is relevant to the media industry, news outlets, and social media platforms that are responsible for sharing news articles. Classifying news articles as real or fake can help these organizations improve their content moderation and reduce the spread of fake news."
+        url="https://github.com/Yahya305/Fake-News-Detector-AI"
+        imageURL="https://github.com/Yahya305/Fake-News-Detector-AI/blob/main/public/demo.jpg?raw=true"
     />,
     <CardProjects
-    key={5}
-    title="Four More Supports"
-    description="A simple and secure app for booking doctor appointments. It streamlines healthcare access with features like specialist search, appointment management, and role-based access control, making it easier for patients to connect with doctors."
-    url="https://github.com/Yahya305/FourMoreSupports"
-    imageURL="https://github.com/Yahya305/FourMoreSupports/raw/main/four-more-supports-frontend/public/dashboard.png"
+        key={5}
+        title="Four More Supports"
+        description="A simple and secure app for booking doctor appointments. It streamlines healthcare access with features like specialist search, appointment management, and role-based access control, making it easier for patients to connect with doctors."
+        url="https://github.com/Yahya305/FourMoreSupports"
+        imageURL="https://github.com/Yahya305/FourMoreSupports/raw/main/four-more-supports-frontend/public/dashboard.png"
     />,
     <CardProjects
         key={3}
