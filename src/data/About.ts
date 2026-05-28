@@ -21,7 +21,13 @@ export const educationList = [
 
 export const experienceList = [
     {
-        duration: "2023 - Present",
+        duration: "Dec 2025 - Present",
+        title: "Software Engineer & Technical Consultant ",
+        description:
+            "Engineered scalable cross-platform mobile applications using React Native and backend-heavy full-stack architectures. Designed and implemented AI-powered agentic solutions, automation workflows, and API-driven systems while working directly with clients to gather requirements, define technical roadmaps, and deliver business-focused solutions across multiple projects.",
+    },
+    {
+        duration: "Jun 2022 - Dec 2025",
         title: "IANCON - Full Stack Developer",
         description:
             "Contributed to developing and deploying scalable applications, implementing features like RBAC, payment gateways, and OAuth. Collaborated on system design and client interactions to deliver tailored solutions.",
