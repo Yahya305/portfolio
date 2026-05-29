@@ -3,7 +3,7 @@ export const educationList = [
         duration: "Jan 2022 - Dec 2025",
         title: "Bachelor's Degree | BSCS",
         description:
-            "Pursuing a degree in Computer Science at University Of Karachi (UBIT), expected to graduate in 2026. Building expertise in software development, algorithms, and systems design through coursework and projects.",
+            "Completed a Bachelor's degree in Computer Science at University Of Karachi (UBIT), building expertise in software development, algorithms, and systems design through coursework and projects.",
     },
     {
         duration: "2020 - 2021",
@@ -22,7 +22,7 @@ export const educationList = [
 export const experienceList = [
     {
         duration: "Dec 2025 - Present",
-        title: "Software Engineer & Technical Consultant ",
+        title: "Bitrupt - SWE & Technical Consultant ",
         description:
             "Engineered scalable cross-platform mobile applications using React Native and backend-heavy full-stack architectures. Designed and implemented AI-powered agentic solutions, automation workflows, and API-driven systems while working directly with clients to gather requirements, define technical roadmaps, and deliver business-focused solutions across multiple projects.",
     },

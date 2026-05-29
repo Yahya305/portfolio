@@ -12,35 +12,42 @@ export default function MyInfo() {
             </div>
             <div className="flex flex-col gap-5 flex-1">
                 <p>
-                    I'm Yahya Salman, a passionate Full Stack Developer
-                    specializing in the MERN Stack and proficient in frameworks
-                    like NestJS. My expertise lies in building applications with
-                    robust role-based and attribute-based access control
-                    systems, often crafting separate consoles tailored to
-                    diverse user roles.
+                    I'm Yahya Salman, a Full Stack Engineer focused on building
+                    reliable, production-ready software across web, mobile, and
+                    backend platforms. I work primarily in the
+                    JavaScript/TypeScript ecosystem, using technologies like
+                    React, React Native, Node.js, and NestJS to turn business
+                    requirements into scalable digital products while working
+                    closely with clients to shape practical, outcome-driven
+                    solutions.
                 </p>
                 <p>
-                    I thrive on clarity and efficiency, adhering to MVC or Clean
-                    Architecture principles for clean, maintainable codebases.
-                    My knack for visual communication sets me apart—I use
-                    diagrams like DFDs, ERDs, and use case diagrams to simplify
-                    complex ideas for both technical and non-technical
-                    audiences.
+                    A strong part of my work centers on application
+                    architecture, secure access control, and complex business
+                    workflows. I've designed and implemented RBAC and ABAC
+                    systems, multi-role platforms, and admin experiences that
+                    need to balance security, usability, and long-term
+                    maintainability. I also operate as a technical consultant,
+                    helping clients clarify requirements, map business needs,
+                    and translate ideas into clear technical roadmaps and
+                    execution plans.
                 </p>
                 <p>
-                    My journey also extends into the world of AI, where I've
-                    built GPT wrappers leveraging various LLMs and developed an
-                    AI Agent using Dialogflow. Currently, I'm diving into the
-                    exciting realm of DevOps, further expanding my skill set.
+                    Beyond feature delivery, I care deeply about system
+                    clarity. I lean on clean architecture principles, strong
+                    backend design, and visual documentation such as ERDs, DFDs,
+                    and technical flows to align teams, reduce ambiguity, and
+                    move projects forward with confidence.
                 </p>
                 <p>
-                    Outside of work, you'll find me sharpening my strategy as a
-                    chess enthusiast—my favorite opening is the classic 1. e4.
-                    Let's connect and create something remarkable together!
+                    My work also extends into AI and automation, where I've
+                    delivered LLM-powered tools, agentic workflows, and
+                    API-driven systems for real business use cases. Outside of
+                    engineering, I enjoy the strategic side of problem-solving
+                    through chess, and 1. e4 is still my opening of choice.
                 </p>
                 <div>
-
-                <GetResumeButton className="md:hidden mx-auto" />
+                    <GetResumeButton className="md:hidden mx-auto" />
                 </div>
             </div>
         </Wrapper>
