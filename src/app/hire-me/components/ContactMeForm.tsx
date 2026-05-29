@@ -13,24 +13,65 @@ import {
     FormMessage,
 } from "@components/ui/form";
 import { Input } from "@components/ui/input";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@components/ui/select";
+import { Textarea } from "@components/ui/textarea";
 import Wrapper from "@components/Wrapper";
 import { toast } from "@lib/hooks/use-toast";
 
 const formSchema = z.object({
-    name: z.string().min(2, {
+    name: z.string().trim().min(2, {
         message: "Name must be at least 2 characters.",
     }),
-    email: z.string().email("Invalid Email"),
-    phone: z.string().min(5, {
+    email: z.string().trim().email("Invalid Email"),
+    phone: z.string().trim().min(5, {
         message: "Please Enter a valid phone number",
     }),
-    subject: z.string().min(5, {
+    subject: z.string().trim().min(5, {
         message: "Subject must be at least 5 characters.",
     }),
-    comment: z.string().min(15, {
-        message: "Comment must be at least 15 characters.",
+    projectType: z.string().min(1, {
+        message: "Please select a project type.",
+    }),
+    budgetRange: z.string().min(1, {
+        message: "Please select a budget range.",
+    }),
+    timeline: z.string().min(1, {
+        message: "Please select a timeline.",
+    }),
+    comment: z.string().trim().min(20, {
+        message: "Please share a bit more detail about your project.",
     }),
 });
+
+const projectTypeOptions = [
+    "New product build",
+    "Existing product improvement",
+    "AI automation solution",
+    "Technical consulting",
+    "Mobile app development",
+];
+
+const budgetRangeOptions = [
+    "Less than $1,000",
+    "$1,000 - $3,000",
+    "$3,000 - $5,000",
+    "$5,000+",
+    "Let's discuss",
+];
+
+const timelineOptions = [
+    "ASAP",
+    "Within 2 weeks",
+    "Within 1 month",
+    "1-3 months",
+    "Flexible timeline",
+];
 
 export default function ContactMeForm() {
     const form = useForm<z.infer<typeof formSchema>>({
@@ -40,13 +81,14 @@ export default function ContactMeForm() {
             email: "",
             phone: "",
             subject: "",
+            projectType: "",
+            budgetRange: "",
+            timeline: "",
             comment: "",
         },
     });
-    async function onSubmit(values: z.infer<typeof formSchema>) {
-        console.log(values);
 
-        // Show loading toast
+    async function onSubmit(values: z.infer<typeof formSchema>) {
         const loadingToast = toast({
             title: "Sending...",
             description: "Hang tight. Almost there...",
@@ -62,15 +104,14 @@ export default function ContactMeForm() {
             });
 
             if (response.ok) {
-                console.log("Message sent successfully!");
                 loadingToast.dismiss();
+                form.reset();
                 toast({
                     title: "Success!",
-                    description: "We will get back to you shortly.",
+                    description: "Your inquiry has been sent. I'll get back to you shortly.",
                 });
             } else {
-                console.error("Failed to send message.");
-                loadingToast.dismiss(); // Dismiss the loading toast
+                loadingToast.dismiss();
                 toast({
                     variant: "destructive",
                     title: "Oops!",
@@ -80,7 +121,7 @@ export default function ContactMeForm() {
             }
         } catch (error) {
             console.error("An error occurred:", error);
-            loadingToast.dismiss(); // Dismiss the loading toast
+            loadingToast.dismiss();
             toast({
                 variant: "destructive",
                 title: "Error!",
@@ -91,8 +132,13 @@ export default function ContactMeForm() {
     return (
         <Wrapper className="bg-secondary py-20">
             <h4 className="mb-5 mx-2">
-                If you have any project or need help. Contact me
+                Tell me about your project
             </h4>
+            <p className="mb-8 mx-2 text-secondary-foreground">
+                Share a few details about what you're building, where you need
+                help, and your expected timeline so I can respond with the
+                right next steps.
+            </p>
             <Form {...form}>
                 <form
                     onSubmit={form.handleSubmit(onSubmit)}
@@ -105,6 +151,7 @@ export default function ContactMeForm() {
                             name="name"
                             render={({ field }) => (
                                 <FormItem className="flex-1">
+                                    <FormLabel>Name</FormLabel>
                                     <FormControl className="p-6">
                                         <Input placeholder="Name" {...field} />
                                     </FormControl>
@@ -117,6 +164,7 @@ export default function ContactMeForm() {
                             name="email"
                             render={({ field }) => (
                                 <FormItem className="flex-1">
+                                    <FormLabel>Email</FormLabel>
                                     <FormControl className="p-6">
                                         <Input placeholder="Email" {...field} />
                                     </FormControl>
@@ -133,6 +181,7 @@ export default function ContactMeForm() {
                             name="phone"
                             render={({ field }) => (
                                 <FormItem className="flex-1">
+                                    <FormLabel>Phone</FormLabel>
                                     <FormControl className="p-6">
                                         <Input placeholder="Phone" {...field} />
                                     </FormControl>
@@ -145,9 +194,10 @@ export default function ContactMeForm() {
                             name="subject"
                             render={({ field }) => (
                                 <FormItem className="flex-1">
+                                    <FormLabel>Subject</FormLabel>
                                     <FormControl className="p-6">
                                         <Input
-                                            placeholder="Subject"
+                                            placeholder="e.g. Need help shipping an AI feature"
                                             {...field}
                                         />
                                     </FormControl>
@@ -157,23 +207,120 @@ export default function ContactMeForm() {
                         />
                     </div>
 
-                    {/* Comment Field */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <FormField
+                            control={form.control}
+                            name="projectType"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Project Type</FormLabel>
+                                    <Select
+                                        value={field.value}
+                                        onValueChange={field.onChange}
+                                    >
+                                        <FormControl>
+                                            <SelectTrigger className="h-12">
+                                                <SelectValue placeholder="Select project type" />
+                                            </SelectTrigger>
+                                        </FormControl>
+                                        <SelectContent>
+                                            {projectTypeOptions.map((option) => (
+                                                <SelectItem key={option} value={option}>
+                                                    {option}
+                                                </SelectItem>
+                                            ))}
+                                        </SelectContent>
+                                    </Select>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="budgetRange"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Budget Range</FormLabel>
+                                    <Select
+                                        value={field.value}
+                                        onValueChange={field.onChange}
+                                    >
+                                        <FormControl>
+                                            <SelectTrigger className="h-12">
+                                                <SelectValue placeholder="Select budget range" />
+                                            </SelectTrigger>
+                                        </FormControl>
+                                        <SelectContent>
+                                            {budgetRangeOptions.map((option) => (
+                                                <SelectItem key={option} value={option}>
+                                                    {option}
+                                                </SelectItem>
+                                            ))}
+                                        </SelectContent>
+                                    </Select>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="timeline"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Timeline</FormLabel>
+                                    <Select
+                                        value={field.value}
+                                        onValueChange={field.onChange}
+                                    >
+                                        <FormControl>
+                                            <SelectTrigger className="h-12">
+                                                <SelectValue placeholder="Select timeline" />
+                                            </SelectTrigger>
+                                        </FormControl>
+                                        <SelectContent>
+                                            {timelineOptions.map((option) => (
+                                                <SelectItem key={option} value={option}>
+                                                    {option}
+                                                </SelectItem>
+                                            ))}
+                                        </SelectContent>
+                                    </Select>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                    </div>
+
                     <FormField
                         control={form.control}
                         name="comment"
                         render={({ field }) => (
                             <FormItem>
-                                <FormControl className="p-6">
-                                    <Input placeholder="Comment" {...field} />
+                                <FormLabel>Project Details</FormLabel>
+                                <FormControl>
+                                    <Textarea
+                                        placeholder="Tell me about the problem, your goals, your current setup, and the kind of support you're looking for."
+                                        className="min-h-[160px] resize-y"
+                                        {...field}
+                                    />
                                 </FormControl>
+                                <FormDescription>
+                                    Include any useful context like the current
+                                    stack, business goals, blockers, or expected
+                                    deliverables.
+                                </FormDescription>
                                 <FormMessage />
                             </FormItem>
                         )}
                     />
 
                     {/* Submit Button */}
-                    <Button type="submit" className="w-full md:w-auto">
-                        Submit
+                    <Button
+                        type="submit"
+                        className="w-full md:w-auto"
+                        disabled={form.formState.isSubmitting}
+                    >
+                        {form.formState.isSubmitting ? "Sending..." : "Send Inquiry"}
                     </Button>
                 </form>
             </Form>

@@ -15,13 +15,15 @@ function Section1({ className }: { className?: string }) {
         <div className={cn("", className)}>
             <h2 className="lg:text-[50px] xl:text-[70px]">
                 Hello! I'm{" "}
-                <div className="lg:text-[70px] w-[420px] xl:w-[540px] xl:text-[90px]">
+                <span className="block lg:text-[70px] w-[420px] xl:w-[540px] xl:text-[90px]">
                     <NameTypewriter />
-                </div>
+                </span>
             </h2>
-            <div className="text-lg text-secondary-foreground lg:w-[270px] xl:w-[439px]">
-                Full Stack Developer with expertise in the MERN Stack
-            </div>
+            <p className="text-lg text-secondary-foreground lg:w-[320px] xl:w-[520px]">
+                Full Stack Engineer and Technical Consultant helping
+                businesses turn requirements into scalable web, mobile, AI,
+                and automation solutions.
+            </p>
             <GetResumeButton />
         </div>
     );
@@ -44,19 +46,28 @@ function Section2({ className }: { className?: string }) {
             <div className="absolute bottom-1 xs:-right-60 sm:-right-44 h-full w-[400px] overflow-hidden">
                 <div className="relative w-[400px] ">
                     <Link
-                        href="/"
+                        href="https://www.linkedin.com/in/yahya-salman-37aa29263/"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Visit Yahya Salman's LinkedIn profile"
                         className="border border-[rgba(255,255,255,.1)] rounded-full absolute xs:top-[95px] xs:left-[100px] sm:top-[120px] sm:left-[160px] bg-background p-3 hover:bg-white hover:text-black"
                     >
                         <FaLinkedin size={25} />
                     </Link>
                     <Link
-                        href="/"
+                        href="https://github.com/Yahya305"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Visit Yahya Salman's GitHub profile"
                         className="border border-[rgba(255,255,255,.1)] rounded-full absolute xs:top-[155px] xs:left-[175px] sm:top-[220px] sm:left-[270px] bg-background p-3 hover:bg-white hover:text-black"
                     >
                         <FaGithub size={25} />
                     </Link>
                     <Link
-                        href="/"
+                        href="https://www.facebook.com/yahya.salman.3597"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Visit Yahya Salman's Facebook profile"
                         className="border border-[rgba(255,255,255,.1)] rounded-full absolute xs:top-[240px] xs:left-[210px] sm:top-[360px] sm:left-[290px] bg-background p-3 hover:bg-white hover:text-black"
                     >
                         <FaFacebookF size={25} />

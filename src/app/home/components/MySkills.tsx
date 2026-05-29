@@ -10,15 +10,15 @@ export default function MySkills() {
                 <span className="text-secondary-foreground text-lg">
                     || &nbsp;&nbsp;&nbsp; My Skills
                 </span>
-                <h2>MERN Stack Developer</h2>
+                <h2>Full Stack Engineering & Technical Consulting</h2>
                 <GetResumeButton />
             </div>
             <div className="w-full md:w-1/2">
-                <ProgressBar title="React / Next JS" percentage={80} />
-                <ProgressBar title="Node JS, Nest JS" percentage={75} />
+                <ProgressBar title="React / Next JS" percentage={75} />
+                <ProgressBar title="Node JS, Nest JS" percentage={85} />
                 <ProgressBar title="Postgre SQL" percentage={70} />
                 <ProgressBar title="Git / GitHub" percentage={95} />
-                <ProgressBar title="Communication" percentage={75} />
+                <ProgressBar title="Client Discovery & Communication" percentage={85} />
             </div>
         </Wrapper>
     );

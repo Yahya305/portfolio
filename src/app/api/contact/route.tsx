@@ -17,9 +17,27 @@ export async function POST(request: NextRequest) {
         }
 
         // Parse the request body
-        const { name, email, comment, subject, phone } = await request.json();
+        const {
+            name,
+            email,
+            comment,
+            subject,
+            phone,
+            projectType,
+            budgetRange,
+            timeline,
+        } = await request.json();
 
-        if (!name || !email || !comment || !subject || !phone) {
+        if (
+            !name ||
+            !email ||
+            !comment ||
+            !subject ||
+            !phone ||
+            !projectType ||
+            !budgetRange ||
+            !timeline
+        ) {
             return NextResponse.json(
                 { error: "All fields are required" },
                 { status: 400 }
@@ -37,14 +55,18 @@ export async function POST(request: NextRequest) {
 
         // Define the email options
         const mailOptions = {
-            from: email,
+            from: username,
             to: myEmail,
-            subject: `Contact Form Submission from ${name}`,
+            replyTo: email,
+            subject: `New ${projectType} inquiry from ${name}`,
             html: generateContactEmailTemplate({
                 name,
                 email,
                 subject,
                 phone,
+                projectType,
+                budgetRange,
+                timeline,
                 comment,
             }),
         };
