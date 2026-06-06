@@ -32,18 +32,17 @@ function Section2({ className }: { className?: string }) {
     return (
         <div
             className={cn(
-                "relative flex w-[250px] h-[300px] sm:w-[350px] sm:h-[450px] md:w-[400px] md:h-[502px] lg:h-[628px] lg:w-[500px]  sm:mx-auto xs:mx-auto -translate-x-12",
+                "relative flex w-[320px] h-[320px] sm:w-[450px] sm:h-[450px] md:w-[520px] md:h-[520px] lg:h-[680px] lg:w-[680px]  sm:mx-auto xs:mx-auto -translate-x-20  md:-translate-x-40",
                 className
             )}
         >
             <Image
-                src="/Yahya_Salman_Img2.png"
-                // width={500}
-                // height={200}
+                src="/SidePoseNoBackground.png"
                 fill
+                className="object-cover"
                 alt="Yahya Img"
             />
-            <div className="absolute bottom-1 xs:-right-60 sm:-right-44 h-full w-[400px] overflow-hidden">
+            <div className="absolute bottom-1 xs:-right-60 sm:-right-44 md:-right-36 lg:-right-14 lg:top-10 xl:-right-24 h-full w-[400px] overflow-hidden">
                 <div className="relative w-[400px] ">
                     <Link
                         href="https://www.linkedin.com/in/yahya-salman-37aa29263/"
