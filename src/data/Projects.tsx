@@ -135,25 +135,4 @@ export const projects: PortfolioProject[] = [
         imageURL:
             "https://github.com/Yahya305/Fake-News-Detector-AI/blob/main/public/demo.jpg?raw=true",
     },
-    {
-        id: "four-more-supports",
-        title: "Four More Supports",
-        category: "Healthcare Booking Platform",
-        description:
-            "A secure doctor-appointment platform with specialist search, appointment management, and role-based access control.",
-        technologies: ["Healthcare", "RBAC", "Appointment Management"],
-        url: "https://github.com/Yahya305/FourMoreSupports",
-        imageURL:
-            "https://github.com/Yahya305/FourMoreSupports/raw/main/four-more-supports-frontend/public/dashboard.png",
-    },
-    {
-        id: "ai-github-roaster",
-        title: "AI GitHub Roaster",
-        category: "AI Entertainment Tool",
-        description: "An AI tool that roasts GitHub profiles.",
-        technologies: ["AI", "GitHub"],
-        url: "https://github.com/Yahya305/AI-GitHub-Roaster",
-        imageURL:
-            "https://github.com/Yahya305/AI-GitHub-Roaster/blob/main/public/image.png?raw=true",
-    },
 ];
