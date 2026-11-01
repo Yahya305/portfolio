@@ -12,39 +12,34 @@ export default function MyInfo() {
             </div>
             <div className="flex flex-col gap-5 flex-1">
                 <p>
-                    I'm Yahya Salman, a Full Stack Engineer focused on building
-                    reliable, production-ready software across web, mobile, and
-                    backend platforms. I work primarily in the
-                    JavaScript/TypeScript ecosystem, using technologies like
-                    React, React Native, Node.js, and NestJS to turn business
-                    requirements into scalable digital products while working
-                    closely with clients to shape practical, outcome-driven
-                    solutions.
+                    I'm Yahya Salman, a Full Stack Software Engineer and
+                    Technical Consultant with 4+ years of experience building
+                    enterprise and consumer web, mobile, and AI products. I
+                    take products from early ideas to reliable launches,
+                    including work for FinTech and maritime operations teams.
                 </p>
                 <p>
-                    A strong part of my work centers on application
-                    architecture, secure access control, and complex business
-                    workflows. I've designed and implemented RBAC and ABAC
-                    systems, multi-role platforms, and admin experiences that
-                    need to balance security, usability, and long-term
-                    maintainability. I also operate as a technical consultant,
-                    helping clients clarify requirements, map business needs,
-                    and translate ideas into clear technical roadmaps and
-                    execution plans.
+                    My strongest work sits at the backend and architecture
+                    layer: designing scalable APIs, cloud-native systems, data
+                    flows, and real-time experiences with Node.js, NestJS,
+                    FastAPI, PostgreSQL, Redis, and AWS. I care about the
+                    details that make systems dependable in production,
+                    including performance engineering, load testing, secure
+                    access control, and maintainable modular design.
                 </p>
                 <p>
-                    Beyond feature delivery, I care deeply about system
-                    clarity. I lean on clean architecture principles, strong
-                    backend design, and visual documentation such as ERDs, DFDs,
-                    and technical flows to align teams, reduce ambiguity, and
-                    move projects forward with confidence.
+                    I also work directly with clients and stakeholders as a
+                    technical consultant and business analyst. That means
+                    clarifying requirements, mapping workflows, evaluating
+                    trade-offs, and turning business goals into practical
+                    technical roadmaps that teams can execute with confidence.
                 </p>
                 <p>
-                    My work also extends into AI and automation, where I've
-                    delivered LLM-powered tools, agentic workflows, and
-                    API-driven systems for real business use cases. Outside of
-                    engineering, I enjoy the strategic side of problem-solving
-                    through chess, and 1. e4 is still my opening of choice.
+                    My recent work includes retrieval-augmented generation,
+                    LLM agents, multi-agent systems, and automation workflows
+                    designed for real business use cases. I enjoy the same
+                    structured problem-solving outside engineering as a
+                    competitive chess player.
                 </p>
                 <div>
                     <GetResumeButton className="md:hidden mx-auto" />

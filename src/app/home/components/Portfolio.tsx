@@ -2,38 +2,59 @@ import React from "react";
 import Wrapper from "@components/Wrapper";
 import {
     Carousel,
-    CarouselContent,
-    CarouselItem,
     CarouselNext,
     CarouselPrevious,
 } from "@components/ui/carousel";
 import CardProjects from "@components/ui/CardProjects";
 import ResponsiveCarousel from "./ResponsiveCarousel";
-import { projects } from "../../../data/Projects";
+import {
+    caseStudies,
+    publicProjects,
+    type PortfolioProject,
+} from "../../../data/Projects";
+
+function ProjectCarousel({
+    eyebrow,
+    title,
+    projects,
+}: {
+    eyebrow: string;
+    title: string;
+    projects: PortfolioProject[];
+}) {
+    return (
+        <Carousel className="mt-10">
+            <div className="relative mb-10 pr-24 sm:pr-48">
+                <span className="text-lg text-secondary-foreground">
+                    || &nbsp;&nbsp;&nbsp; {eyebrow}
+                </span>
+                <h2>{title}</h2>
+                <CarouselPrevious className="absolute right-14 top-1/2 h-12 w-12 -translate-y-1/2 bg-secondary sm:right-24 sm:h-16 sm:w-16" />
+                <CarouselNext className="absolute right-0 top-1/2 h-12 w-12 -translate-y-1/2 bg-secondary sm:h-16 sm:w-16" />
+            </div>
+            <ResponsiveCarousel
+                allProjects={projects.map((project) => (
+                    <CardProjects key={project.id} project={project} />
+                ))}
+            />
+        </Carousel>
+    );
+}
 
 export default function Portfolio() {
-    // const allProjects = [
-    //     <CardProjects key={1} />,
-    //     <CardProjects key={2} />,
-    //     <CardProjects key={3} />,
-    //     <CardProjects key={4} />,
-    //     <CardProjects key={5} />,
-    //     <CardProjects key={6} />,
-    // ];
     return (
         <Wrapper className="py-20 bg-secondary">
-            <div>
-                <Carousel className="mt-10">
-                    <div className="relative mb-10">
-                        <span className="text-lg text-secondary-foreground">
-                            || &nbsp;&nbsp;&nbsp; Awesome Porfolio
-                        </span>
-                        <h2>My Complete Projects</h2>
-                        <CarouselPrevious className="absolute w-12 h-12 top-0 sm:top-10 left-full xs:-translate-x-28 sm:-translate-x-44 sm:h-20 sm:w-20 bg-secondary" />
-                        <CarouselNext className="absolute right-0 w-12 h-12 top-0 sm:top-10 sm:h-20 sm:w-20 bg-secondary" />
-                    </div>
-                    <ResponsiveCarousel allProjects={projects} />
-                </Carousel>
+            <ProjectCarousel
+                eyebrow="Selected Work"
+                title="Selected Case Studies"
+                projects={caseStudies}
+            />
+            <div className="mt-24">
+                <ProjectCarousel
+                    eyebrow="Personal Projects"
+                    title="Labs & Open Source"
+                    projects={publicProjects}
+                />
             </div>
         </Wrapper>
     );

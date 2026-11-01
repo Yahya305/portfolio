@@ -22,9 +22,9 @@ export default function MyServices() {
     return (
         <Wrapper className="bg-secondary py-20">
             <span className="text-secondary-foreground text-lg">
-                || &nbsp;&nbsp;&nbsp; My Repertoire
+                || &nbsp;&nbsp;&nbsp; Core Capabilities
             </span>
-            <h2>What I Work With.</h2>
+            <h2>How I Help Teams Ship.</h2>
             {/* // Desktop Screen */}
             <Carousel className="mt-10 hidden lg:block">
                 <CarouselContent>
