@@ -13,7 +13,7 @@
 ## Global Constraints
 
 - Do not push, deploy, or modify the resume PDF.
-- Use only resume-supported public claims and metrics.
+- Use resume-supported claims and metrics for confidential client work; source public-project details from their linked repositories or live sites.
 - Do not add a test framework; this repository has none and the changes are static content/presentation.
 - Verify with `npx tsc --noEmit` and `git diff --check`; do not run a production build unless explicitly requested.
 

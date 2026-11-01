@@ -36,7 +36,8 @@ Bring the portfolio in line with the current resume so that it represents Yahya 
 
 ## Constraints
 
-- Use only claims, project names, and metrics already in the approved resume.
+- Use only approved-resume claims, project names, and metrics for confidential client case studies.
+- Source public-project descriptions and technical details from their existing linked repositories or live sites.
 - Keep all changed copy in English and preserve the existing visual language.
 - Keep links optional for confidential client work.
 - Do not push the branch.
