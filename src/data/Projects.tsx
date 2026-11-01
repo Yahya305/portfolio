@@ -60,6 +60,7 @@ export const projects: PortfolioProject[] = [
             "Delivered a streaming chat experience for complex maritime operations workflows.",
         ],
         url: "https://shipfacet.com/",
+        imageURL: "/shipfacet.jpg",
     },
     {
         id: "helion",
