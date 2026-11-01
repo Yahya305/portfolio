@@ -14,11 +14,11 @@ export default function MySkills() {
                 <GetResumeButton />
             </div>
             <div className="w-full md:w-1/2">
-                <ProgressBar title="React / Next JS" percentage={75} />
-                <ProgressBar title="Node JS, Nest JS" percentage={85} />
-                <ProgressBar title="Postgre SQL" percentage={70} />
-                <ProgressBar title="Git / GitHub" percentage={95} />
-                <ProgressBar title="Client Discovery & Communication" percentage={85} />
+                <ProgressBar title="Backend Architecture & APIs" percentage={90} />
+                <ProgressBar title="Cloud, DevOps & Performance" percentage={80} />
+                <ProgressBar title="Applied AI, RAG & Agent Systems" percentage={85} />
+                <ProgressBar title="Web & Mobile Product Delivery" percentage={80} />
+                <ProgressBar title="Client Discovery & Technical Roadmaps" percentage={85} />
             </div>
         </Wrapper>
     );

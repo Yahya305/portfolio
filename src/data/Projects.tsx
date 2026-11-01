@@ -1,67 +1,139 @@
-import CardProjects from "@components/ui/CardProjects";
+export type PortfolioProject = {
+    id: string;
+    title: string;
+    category: string;
+    description: string;
+    technologies?: string[];
+    highlights?: string[];
+    url?: string;
+    imageURL?: string;
+};
 
-export const projects = [
-    <CardProjects
-        key={1}
-        title="Helion (AI Assistant)"
-        description="An advanced conversational AI agent featuring persistent memory, web search, weather tools, and real-time streaming responses powered by LangGraph and Gemini 2.0. "
-        url="https://github.com/Yahya305/Helion-AI-Chatbot"
-        imageURL="https://raw.githubusercontent.com/Yahya305/Helion-AI-Chatbot/refs/heads/master/client/public/ToolsIntegration.png"
-    />,
-    <CardProjects
-        key={2}
-        title="Sketcha"
-        description="An intelligent architectural diagramming agent that transforms natural language into complex technical visualizations (UML, Flowcharts). Features iterative 'context-aware' design modification, persistent library management, and a premium Next.js interface."
-        url="https://sketcha-tan.vercel.app"
-        imageURL="/Sketcha.png"
-    />,
-    <CardProjects
-        key={3}
-        title="Streaming App"
-        description="A high-performance architecture featuring resumable direct-to-storage uploads (Cloudflare R2), adaptive bitrate streaming (HLS) via FFmpeg transcoding, and non-blocking real-time progress tracking using Redis and Server-Sent Events."
-        url="https://github.com/Yahya305/StreamingApp"
-        imageURL="/StreamingApp.png"
-    />,
-    <CardProjects
-        key={4}
-        title="AI Resume Analyzer"
-        description="Ai Resume Analyzer is a tool which parses information from a resume using natural language processing and finds the keywords, cluster them onto sectors based on their keywords. And lastly show recommendations, predictions, analytics to the applicant based on keyword matching."
-        url="https://github.com/Yahya305/AI-Resume-Analyzer"
-        imageURL="https://github.com/Yahya305/AI-Resume-Analyzer/raw/main/screenshots/user/1-main-screen.png?raw=true"
-    />,
-    <CardProjects
-        key={5}
-        title="Doctor Saab"
-        description="Doctor Saab is an AI-powered medical chatbot using LLMs, RAG, vector databases, and a structured knowledge base for accurate, context-aware responses. With a modern UI, it delivers real-time streaming replies, rich HTML-formatted messages, and smooth interactions."
-        url="https://github.com/Yahya305/Daaktar-Saab"
-        imageURL="/screenshot.png"
-    />,
-    <CardProjects
-        key={6}
-        title="Marketplace Admin Panel"
-        description="Admin panel for a finance/business platform, featuring advanced data visualizations with interactive graphs, robust management of sub-users, and intuitive controls for seamless administration."
-        url="https://github.com/Yahya305/Marketplace-AdminPanel"
-        imageURL="https://github.com/Yahya305/Marketplace-AdminPanel/raw/main/public/dashboard.png"
-    />,
-    <CardProjects
-        key={7}
-        title="AI Fake News Detector"
-        description="This project is relevant to the media industry, news outlets, and social media platforms that are responsible for sharing news articles. Classifying news articles as real or fake can help these organizations improve their content moderation and reduce the spread of fake news."
-        url="https://github.com/Yahya305/Fake-News-Detector-AI"
-        imageURL="https://github.com/Yahya305/Fake-News-Detector-AI/blob/main/public/demo.jpg?raw=true"
-    />,
-    <CardProjects
-        key={8}
-        title="Four More Supports"
-        description="A simple and secure app for booking doctor appointments. It streamlines healthcare access with features like specialist search, appointment management, and role-based access control, making it easier for patients to connect with doctors."
-        url="https://github.com/Yahya305/FourMoreSupports"
-        imageURL="https://github.com/Yahya305/FourMoreSupports/raw/main/four-more-supports-frontend/public/dashboard.png"
-    />,
-    <CardProjects
-        key={9}
-        title="AI GitHub Roaster"
-        description="A cool AI that roasts your GitHub profile."
-        url="https://github.com/Yahya305/AI-GitHub-Roaster"
-        imageURL="https://github.com/Yahya305/AI-GitHub-Roaster/blob/main/public/image.png?raw=true"
-    />,
+export const projects: PortfolioProject[] = [
+    {
+        id: "follow",
+        title: "Follow",
+        category: "Video-First Social Platform",
+        description:
+            "Designed the personalization and recommendation engine and proposed the system architecture for a video-first social platform.",
+        technologies: ["NestJS", "TypeScript", "PostgreSQL", "Redis", "AWS"],
+        highlights: [
+            "Architected a platform across 11 independently scaled services.",
+            "Built video upload and adaptive-bitrate streaming with S3, MediaConvert, HLS, and CloudFront.",
+            "Validated 10,000 concurrent users at a 0.05% error rate and improved feed response time 9x.",
+        ],
+        url: "https://follow.global/",
+        imageURL: "/follow.png",
+    },
+    {
+        id: "membership-sales-coach",
+        title: "Membership Sales Coach",
+        category: "AI Sales-Training Platform",
+        description:
+            "Built an AI coaching and role-play platform that helps sales teams learn from a source-grounded knowledge base and practice with AI buyer personas.",
+        technologies: ["RAG", "LLM Agents", "PII Redaction", "Prompt Engineering"],
+        highlights: [
+            "Delivered source citations and hallucination guardrails for coach-mode answers.",
+            "Created AI buyer personas and competency-based scoring for live sales-call practice.",
+            "Reduced LLM token usage and API cost by roughly 40% per conversation.",
+        ],
+        url: "https://play.google.com/store/apps/details?id=com.thefitnessflywheel.app&hl=en",
+        imageURL: "/membership-sales-coach.jpg",
+    },
+    {
+        id: "shipfacet",
+        title: "Shipfacet",
+        category: "AI Maritime Operations Platform",
+        description:
+            "Developed a B2B multi-agent decision-support platform for voyage intelligence, vessel valuation, charter-party analysis, and operational risk assessment.",
+        technologies: [
+            "Python",
+            "FastAPI",
+            "LangGraph",
+            "Milvus",
+            "React",
+            "TypeScript",
+        ],
+        highlights: [
+            "Implemented supervisor orchestration, RAG workflows, and vector search with source citations.",
+            "Built guarded natural-language-to-SQL valuation and deterministic risk calculations.",
+            "Delivered a streaming chat experience for complex maritime operations workflows.",
+        ],
+        url: "https://shipfacet.com/",
+        imageURL: "/shipfacet.jpg",
+    },
+    {
+        id: "helion",
+        title: "Helion (AI Assistant)",
+        category: "Conversational AI Assistant",
+        description:
+            "An advanced conversational AI agent featuring persistent memory, web search, weather tools, and real-time streaming responses powered by LangGraph and Gemini 2.0.",
+        technologies: ["LangGraph", "Gemini", "Streaming", "Tool Calling"],
+        url: "https://github.com/Yahya305/Helion-AI-Chatbot",
+        imageURL:
+            "https://raw.githubusercontent.com/Yahya305/Helion-AI-Chatbot/refs/heads/master/client/public/ToolsIntegration.png",
+    },
+    {
+        id: "sketcha",
+        title: "Sketcha",
+        category: "Architecture Diagramming Agent",
+        description:
+            "An intelligent architectural diagramming agent that transforms natural language into complex technical visualizations, including UML diagrams and flowcharts.",
+        technologies: ["Next.js", "TypeScript", "AI Agents"],
+        url: "https://sketcha-tan.vercel.app",
+        imageURL: "/Sketcha.png",
+    },
+    {
+        id: "streaming-app",
+        title: "Streaming App",
+        category: "Video Delivery Architecture",
+        description:
+            "A high-performance architecture featuring resumable direct-to-storage uploads, adaptive bitrate streaming, and non-blocking real-time progress tracking.",
+        technologies: ["Cloudflare R2", "FFmpeg", "HLS", "Redis", "SSE"],
+        url: "https://github.com/Yahya305/StreamingApp",
+        imageURL: "/StreamingApp.png",
+    },
+    {
+        id: "ai-resume-analyzer",
+        title: "AI Resume Analyzer",
+        category: "Resume Intelligence Tool",
+        description:
+            "A tool that parses resume information with natural language processing, groups keywords into sectors, and provides recommendations, predictions, and applicant analytics.",
+        technologies: ["NLP", "Keyword Analysis", "Analytics"],
+        url: "https://github.com/Yahya305/AI-Resume-Analyzer",
+        imageURL:
+            "https://github.com/Yahya305/AI-Resume-Analyzer/raw/main/screenshots/user/1-main-screen.png?raw=true",
+    },
+    {
+        id: "doctor-saab",
+        title: "Doctor Saab",
+        category: "AI Medical Chatbot",
+        description:
+            "An AI-powered medical chatbot using LLMs, RAG, vector databases, and a structured knowledge base for accurate, context-aware responses.",
+        technologies: ["LLMs", "RAG", "Vector Database", "Streaming"],
+        url: "https://github.com/Yahya305/Daaktar-Saab",
+        imageURL: "/screenshot.png",
+    },
+    {
+        id: "marketplace-admin-panel",
+        title: "Marketplace Admin Panel",
+        category: "Finance Operations Dashboard",
+        description:
+            "An admin panel for a finance and business platform with interactive data visualizations, sub-user management, and intuitive administration controls.",
+        technologies: ["Data Visualization", "User Management", "Admin Tools"],
+        url: "https://github.com/Yahya305/Marketplace-AdminPanel",
+        imageURL:
+            "https://github.com/Yahya305/Marketplace-AdminPanel/raw/main/public/dashboard.png",
+    },
+    {
+        id: "fake-news-detector",
+        title: "AI Fake News Detector",
+        category: "Content Moderation Tool",
+        description:
+            "A machine-learning project that classifies news articles as real or fake to support content moderation and reduce misinformation.",
+        technologies: ["Machine Learning", "Text Classification", "Content Moderation"],
+        url: "https://github.com/Yahya305/Fake-News-Detector-AI",
+        imageURL:
+            "https://github.com/Yahya305/Fake-News-Detector-AI/blob/main/public/demo.jpg?raw=true",
+    },
 ];

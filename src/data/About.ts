@@ -22,14 +22,14 @@ export const educationList = [
 export const experienceList = [
     {
         duration: "Dec 2025 - Present",
-        title: "Bitrupt - SWE & Technical Consultant ",
+        title: "Bitrupt - Software Engineer & Technical Consultant",
         description:
-            "Engineered scalable cross-platform mobile applications using React Native and backend-heavy full-stack architectures. Designed and implemented AI-powered agentic solutions, automation workflows, and API-driven systems while working directly with clients to gather requirements, define technical roadmaps, and deliver business-focused solutions across multiple projects.",
+            "Lead backend development and system architecture for client products, including Follow, a video-first social platform. Build React Native applications, AI-powered agentic systems, and automation workflows while partnering directly with clients to define requirements, technical roadmaps, and reliable production delivery.",
     },
     {
         duration: "Jun 2022 - Dec 2025",
         title: "IANCON - Full Stack Developer",
         description:
-            "Contributed to developing and deploying scalable applications, implementing features like RBAC, payment gateways, and OAuth. Collaborated on system design and client interactions to deliver tailored solutions.",
+            "Developed full-stack dashboards and B2B products for FinTech and maritime logistics clients, including the Shipfacet AI platform. Delivered multi-agent and RAG workflows with Python, FastAPI, and LangGraph alongside RBAC, payment, and automation capabilities for production-ready client systems.",
     },
 ];
