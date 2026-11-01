@@ -29,20 +29,20 @@ function ProjectPreview({ project }: { project: PortfolioProject }) {
             src={project.imageURL}
             alt={`${project.title} project preview`}
             fill
-            className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+            className="object-contain p-4"
             sizes="(max-width: 768px) 100vw, 50vw"
         />
     );
 
     return (
-        <div className="relative min-h-[260px] overflow-hidden rounded-md border border-border bg-card">
+        <div className="relative aspect-square min-h-[260px] overflow-hidden rounded-md border border-border bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.1),_transparent_38%),linear-gradient(135deg,_#242634,_#151720)]">
             {project.url ? (
                 <Link
                     href={project.url}
                     target="_blank"
                     rel="noreferrer"
                     aria-label={`Open ${project.title}`}
-                    className="group absolute inset-0"
+                    className="absolute inset-0"
                 >
                     {image}
                 </Link>
