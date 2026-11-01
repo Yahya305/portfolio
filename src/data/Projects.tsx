@@ -3,14 +3,13 @@ export type PortfolioProject = {
     title: string;
     category: string;
     description: string;
-    technologies: string[];
-    highlights: string[];
+    technologies?: string[];
+    highlights?: string[];
     url?: string;
     imageURL?: string;
-    confidential?: boolean;
 };
 
-export const caseStudies: PortfolioProject[] = [
+export const projects: PortfolioProject[] = [
     {
         id: "follow",
         title: "Follow",
@@ -23,7 +22,6 @@ export const caseStudies: PortfolioProject[] = [
             "Built video upload and adaptive-bitrate streaming with S3, MediaConvert, HLS, and CloudFront.",
             "Validated 10,000 concurrent users at a 0.05% error rate and improved feed response time 9x.",
         ],
-        confidential: true,
     },
     {
         id: "membership-sales-coach",
@@ -37,7 +35,6 @@ export const caseStudies: PortfolioProject[] = [
             "Created AI buyer personas and competency-based scoring for live sales-call practice.",
             "Reduced LLM token usage and API cost by roughly 40% per conversation.",
         ],
-        confidential: true,
     },
     {
         id: "shipfacet",
@@ -58,52 +55,100 @@ export const caseStudies: PortfolioProject[] = [
             "Built guarded natural-language-to-SQL valuation and deterministic risk calculations.",
             "Delivered a streaming chat experience for complex maritime operations workflows.",
         ],
-        confidential: true,
     },
-];
-
-export const publicProjects: PortfolioProject[] = [
+    {
+        id: "helion",
+        title: "Helion (AI Assistant)",
+        category: "Conversational AI Assistant",
+        description:
+            "An advanced conversational AI agent featuring persistent memory, web search, weather tools, and real-time streaming responses powered by LangGraph and Gemini 2.0.",
+        technologies: ["LangGraph", "Gemini", "Streaming", "Tool Calling"],
+        url: "https://github.com/Yahya305/Helion-AI-Chatbot",
+        imageURL:
+            "https://raw.githubusercontent.com/Yahya305/Helion-AI-Chatbot/refs/heads/master/client/public/ToolsIntegration.png",
+    },
     {
         id: "sketcha",
         title: "Sketcha",
         category: "Architecture Diagramming Agent",
         description:
-            "A natural-language diagramming agent for generating and iterating on technical visualizations, including UML diagrams and flowcharts.",
+            "An intelligent architectural diagramming agent that transforms natural language into complex technical visualizations, including UML diagrams and flowcharts.",
         technologies: ["Next.js", "TypeScript", "AI Agents"],
-        highlights: [
-            "Transforms plain-language requests into technical visualizations.",
-            "Supports context-aware iterative design modifications.",
-        ],
         url: "https://sketcha-tan.vercel.app",
         imageURL: "/Sketcha.png",
-    },
-    {
-        id: "helion",
-        title: "Helion",
-        category: "Conversational AI Assistant",
-        description:
-            "A conversational AI assistant with persistent memory, live tool integrations, web search, weather, and streaming responses.",
-        technologies: ["LangGraph", "Gemini", "Streaming", "Tool Calling"],
-        highlights: [
-            "Combines persistent context with external tool integrations.",
-            "Streams responses for a responsive chat experience.",
-        ],
-        url: "https://github.com/Yahya305/Helion-AI-Chatbot",
-        imageURL:
-            "https://raw.githubusercontent.com/Yahya305/Helion-AI-Chatbot/refs/heads/master/client/public/ToolsIntegration.png",
     },
     {
         id: "streaming-app",
         title: "Streaming App",
         category: "Video Delivery Architecture",
         description:
-            "A video platform architecture built around reliable large-file uploads, adaptive streaming, and real-time processing progress.",
+            "A high-performance architecture featuring resumable direct-to-storage uploads, adaptive bitrate streaming, and non-blocking real-time progress tracking.",
         technologies: ["Cloudflare R2", "FFmpeg", "HLS", "Redis", "SSE"],
-        highlights: [
-            "Uses resumable direct-to-storage uploads for large media files.",
-            "Delivers adaptive bitrate video and non-blocking progress updates.",
-        ],
         url: "https://github.com/Yahya305/StreamingApp",
         imageURL: "/StreamingApp.png",
+    },
+    {
+        id: "ai-resume-analyzer",
+        title: "AI Resume Analyzer",
+        category: "Resume Intelligence Tool",
+        description:
+            "A tool that parses resume information with natural language processing, groups keywords into sectors, and provides recommendations, predictions, and applicant analytics.",
+        technologies: ["NLP", "Keyword Analysis", "Analytics"],
+        url: "https://github.com/Yahya305/AI-Resume-Analyzer",
+        imageURL:
+            "https://github.com/Yahya305/AI-Resume-Analyzer/raw/main/screenshots/user/1-main-screen.png?raw=true",
+    },
+    {
+        id: "doctor-saab",
+        title: "Doctor Saab",
+        category: "AI Medical Chatbot",
+        description:
+            "An AI-powered medical chatbot using LLMs, RAG, vector databases, and a structured knowledge base for accurate, context-aware responses.",
+        technologies: ["LLMs", "RAG", "Vector Database", "Streaming"],
+        url: "https://github.com/Yahya305/Daaktar-Saab",
+        imageURL: "/screenshot.png",
+    },
+    {
+        id: "marketplace-admin-panel",
+        title: "Marketplace Admin Panel",
+        category: "Finance Operations Dashboard",
+        description:
+            "An admin panel for a finance and business platform with interactive data visualizations, sub-user management, and intuitive administration controls.",
+        technologies: ["Data Visualization", "User Management", "Admin Tools"],
+        url: "https://github.com/Yahya305/Marketplace-AdminPanel",
+        imageURL:
+            "https://github.com/Yahya305/Marketplace-AdminPanel/raw/main/public/dashboard.png",
+    },
+    {
+        id: "fake-news-detector",
+        title: "AI Fake News Detector",
+        category: "Content Moderation Tool",
+        description:
+            "A machine-learning project that classifies news articles as real or fake to support content moderation and reduce misinformation.",
+        technologies: ["Machine Learning", "Text Classification", "Content Moderation"],
+        url: "https://github.com/Yahya305/Fake-News-Detector-AI",
+        imageURL:
+            "https://github.com/Yahya305/Fake-News-Detector-AI/blob/main/public/demo.jpg?raw=true",
+    },
+    {
+        id: "four-more-supports",
+        title: "Four More Supports",
+        category: "Healthcare Booking Platform",
+        description:
+            "A secure doctor-appointment platform with specialist search, appointment management, and role-based access control.",
+        technologies: ["Healthcare", "RBAC", "Appointment Management"],
+        url: "https://github.com/Yahya305/FourMoreSupports",
+        imageURL:
+            "https://github.com/Yahya305/FourMoreSupports/raw/main/four-more-supports-frontend/public/dashboard.png",
+    },
+    {
+        id: "ai-github-roaster",
+        title: "AI GitHub Roaster",
+        category: "AI Entertainment Tool",
+        description: "An AI tool that roasts GitHub profiles.",
+        technologies: ["AI", "GitHub"],
+        url: "https://github.com/Yahya305/AI-GitHub-Roaster",
+        imageURL:
+            "https://github.com/Yahya305/AI-GitHub-Roaster/blob/main/public/image.png?raw=true",
     },
 ];
