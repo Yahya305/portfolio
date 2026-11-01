@@ -29,7 +29,7 @@ function ProjectPreview({ project }: { project: PortfolioProject }) {
             src={project.imageURL}
             alt={`${project.title} project preview`}
             fill
-            className="object-contain"
+            className="object-fill"
             sizes="(max-width: 768px) 100vw, 50vw"
         />
     );
