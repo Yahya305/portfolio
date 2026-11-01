@@ -22,6 +22,8 @@ export const projects: PortfolioProject[] = [
             "Built video upload and adaptive-bitrate streaming with S3, MediaConvert, HLS, and CloudFront.",
             "Validated 10,000 concurrent users at a 0.05% error rate and improved feed response time 9x.",
         ],
+        url: "https://follow.global/",
+        imageURL: "/follow.png",
     },
     {
         id: "membership-sales-coach",
@@ -35,6 +37,8 @@ export const projects: PortfolioProject[] = [
             "Created AI buyer personas and competency-based scoring for live sales-call practice.",
             "Reduced LLM token usage and API cost by roughly 40% per conversation.",
         ],
+        url: "https://play.google.com/store/apps/details?id=com.thefitnessflywheel.app&hl=en",
+        imageURL: "/membership-sales-coach.jpg",
     },
     {
         id: "shipfacet",
