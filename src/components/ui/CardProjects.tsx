@@ -8,9 +8,9 @@ import React from "react";
 function ProjectPreview({ project }: { project: PortfolioProject }) {
     if (!project.imageURL) {
         return (
-            <div className="relative flex min-h-[260px] items-end overflow-hidden rounded-md border border-border bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.14),_transparent_38%),linear-gradient(135deg,_#242634,_#151720)] p-7">
-                <div className="relative z-10 max-w-[260px]">
-                    <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.18em] text-secondary-foreground">
+            <div className="flex h-[400px] items-end justify-center overflow-hidden rounded-md border border-border bg-card sm:h-[450px]">
+                <div className="relative flex h-[350px] w-[350px] max-w-[calc(100%-2rem)] flex-col justify-end overflow-hidden rounded-md bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.14),_transparent_38%),linear-gradient(135deg,_#242634,_#151720)] p-7">
+                    <span className="mb-4 inline-flex w-fit rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.18em] text-secondary-foreground">
                         Featured Project
                     </span>
                     <p className="text-2xl font-semibold text-foreground">
@@ -29,26 +29,28 @@ function ProjectPreview({ project }: { project: PortfolioProject }) {
             src={project.imageURL}
             alt={`${project.title} project preview`}
             fill
-            className="object-contain p-4"
+            className="object-contain"
             sizes="(max-width: 768px) 100vw, 50vw"
         />
     );
 
     return (
-        <div className="relative aspect-square min-h-[260px] overflow-hidden rounded-md border border-border bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.1),_transparent_38%),linear-gradient(135deg,_#242634,_#151720)]">
-            {project.url ? (
-                <Link
-                    href={project.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`Open ${project.title}`}
-                    className="absolute inset-0"
-                >
-                    {image}
-                </Link>
-            ) : (
-                image
-            )}
+        <div className="flex h-[400px] items-end justify-center overflow-hidden rounded-md border border-border bg-card sm:h-[450px]">
+            <div className="relative h-[350px] w-[350px] max-w-[calc(100%-2rem)] overflow-hidden">
+                {project.url ? (
+                    <Link
+                        href={project.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`Open ${project.title}`}
+                        className="absolute inset-0"
+                    >
+                        {image}
+                    </Link>
+                ) : (
+                    image
+                )}
+            </div>
         </div>
     );
 }

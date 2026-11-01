@@ -59,6 +59,7 @@ export const projects: PortfolioProject[] = [
             "Built guarded natural-language-to-SQL valuation and deterministic risk calculations.",
             "Delivered a streaming chat experience for complex maritime operations workflows.",
         ],
+        url: "https://shipfacet.com/",
     },
     {
         id: "helion",
