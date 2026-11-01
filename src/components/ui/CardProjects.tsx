@@ -1,6 +1,5 @@
 import { cn } from "@lib/utils";
 import type { PortfolioProject } from "../../data/Projects";
-import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -100,20 +99,6 @@ export default function CardProjects({
                         ))}
                     </ul>
                 ) : null}
-                {project.url ? (
-                    <Link
-                        href={project.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="mt-6 inline-flex w-fit items-center gap-2 text-sm font-medium text-foreground transition-opacity hover:opacity-70"
-                    >
-                        View project <ExternalLink size={16} />
-                    </Link>
-                ) : (
-                    <span className="mt-6 text-sm text-secondary-foreground">
-                        Project overview
-                    </span>
-                )}
             </div>
         </article>
     );
